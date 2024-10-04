@@ -1,0 +1,714 @@
+/*My style below*/
+
+:root {
+  --text-white: #fff;
+  --text-black: #000;
+  --box-shadow: 0 6px 12px rgba(0, 0, 0, 0.16);
+  --background-black: #000;
+  --background-white: #fff;
+}
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 100%;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Styling for reusable elements (General)*/
+/*Navbar*/
+.navigation-bar {
+  background-color: black;
+  color: var(--text-white);
+  padding: 1rem 0 1rem 0;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.nav-list li {
+  margin: 20px 10px;
+}
+.nav-list li:first-child {
+  margin-right: auto;
+}
+/* Hero section */
+.hero-section-container {
+  background-color: var(--background-black);
+  color: var(--text-white);
+  height: 300px;
+  padding-left: 11%;
+  padding-right: 10%;
+}
+.hero-h2 {
+  font-size: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.hero-p {
+  width: 50%;
+  align-content: left;
+  font-size: 1.2rem;
+}
+/* My project section */
+/* .project-section-h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+} */
+.my-project-section {
+  background-color: var(--background-white);
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.project-section-h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.grid-project-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 0 1.5rem;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--box-shadow);
+  height: auto;
+}
+.project-h2 {
+  font-size: 1.5rem;
+  color: var(--text-black);
+  margin-bottom: 1.5rem;
+}
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.portfolio-image {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+.button-dark {
+  background-color: black;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: block;
+  text-align: left;
+  margin: 2rem auto;
+}
+.see-more-button:hover {
+  background-color: #333;
+}
+/* about me section */
+.about-me-section {
+  background-color: var(--background-black);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.about-me-h2 {
+  color: var(--text-white);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.about-me-p {
+  color: var(--text-white);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+.button-light {
+  background-color: var(--background-white);
+  color: var(--text-black);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+.contact-me-button:hover {
+  background-color: var(--text-white);
+  color: var(--background-black);
+}
+.about-me-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  margin: auto;
+}
+/* Skills and technologies section */
+.my-skills-section {
+  padding: 50px 10% 50px 10%;
+  background-color: var(--background-white);
+  display: grid;
+  gap: 2rem;
+}
+.skill-section-h2 {
+  font-size: 3rem;
+  color: var(--text-black);
+  margin-bottom: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+.skill-group {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: var(--text-white);
+}
+.skill-item {
+  margin-bottom: 1rem;
+  padding-left: 10px;
+}
+.skill-group h3 {
+  margin-bottom: 1rem;
+}
+.skill-item h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+.progress-bar {
+  background-color: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 10px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.progress {
+  background-color: #007bff;
+  height: 100%;
+  transition: width 0.3s;
+}
+/*  Project page Main section styling  */
+.project-main {
+  background: linear-gradient(
+    to bottom right,
+    rgb(16, 16, 16) 70%,
+    rgb(91, 86, 86) 90%,
+    rgb(255, 255, 255) 100%
+  );
+  padding: 5rem 10% 7rem 10%;
+  color: var(--text-white);
+}
+.project-main h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.my-project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+/* Project card styling */
+.project-card {
+  background-color: var(--background-white);
+  color: var(--text-black);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+#project-button {
+  display: inline-block;
+  text-align: center;
+}
+/* Image styling */
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+/* Button styling */
+.button-dark:hover {
+  background-color: rgb(23, 23, 23);
+  color: black;
+}
+/* Contact me page */
+.form-and-map {
+  background: linear-gradient(
+    to bottom right,
+    rgb(16, 16, 16) 70%,
+    rgb(91, 86, 86) 90%,
+    rgb(255, 255, 255) 100%
+  );
+  color: white;
+  padding: 6% 10% 6% 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+/* Contact Information and Map Styling */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-info p {
+  margin: 0.5rem 0;
+}
+.contact-info a {
+  color: var(--text-white);
+  text-decoration: none;
+}
+.contact-info iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+/* Contact Form Styling */
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-form form div {
+  margin-bottom: 1rem;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: rgb(16, 16, 16);
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+.contact-form textarea {
+  height: 120px;
+  resize: vertical;
+}
+#contact-form-button {
+  display: inline-block;
+  align-items: left;
+}
+.contact-form button:hover {
+  background-color: rgb(37, 37, 37);
+  color: black;
+}
+
+/*resume page....................................................... */
+
+.resume {
+  padding: 20px 10% 0 10%;
+}
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.profile h1 {
+  font-size: 2.2rem;
+  margin: 10px 0;
+}
+.profile p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+/* Section Styles */
+.resume > hr {
+  border: 0;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  margin: 2% 0;
+}
+/* Education Section */
+.education {
+  margin: 0 auto 40px;
+  width: 60%;
+  text-align: center;
+}
+.education h2 {
+  padding: 20px 0 20px 0;
+  font-size: 3rem;
+}
+.education ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.education li {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+}
+.education-year {
+  font-style: italic;
+  color: #3b3b3b;
+}
+/* Certificates and Projects */
+.certificates-projects {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.certificates-projects h2 {
+  padding: 20px 0 20px 0;
+  font-size: 3rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.grid-item {
+  background-color: #f3f3f3;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.grid-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.grid-item p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+/* Work Experience Section */
+.work-experience {
+  margin-bottom: 3%;
+  text-align: center;
+}
+.work-experience h2 {
+  padding: 20px 0 20px 0;
+  font-size: 3rem;
+}
+/* General Form Styles */
+.form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f8f8; /* Light background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Field Styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+}
+
+/* Button Styles */
+.form-container .form-submit-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+/* General Form Styles @@@@@@@@@@@@@@@@@@@@@@@@*/
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form group for each label and input pair */
+
+form div {
+  margin-bottom: 20px;
+}
+
+/* Label styles */
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Input and textarea field styles */
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+/* Add some margin to textarea */
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Focus effect for input and textarea */
+form input:focus,
+form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Hover effect for the submit button */
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}
+/* Responsive design */
+@media (max-width: 1024px) {
+  /* tablet */
+  .nav-list {
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+  }
+
+  /*  tablet */
+  .hero-h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-p {
+    width: 70%;
+    font-size: 1.1rem;
+  }
+
+  /*  tablet */
+  .about-me-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-me-h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-me-p {
+    font-size: 1.1rem;
+  }
+
+  .about-me-image {
+    max-width: 300px;
+  }
+
+  /*  tablet */
+  .grid-project-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*  tablet */
+  .education,
+  .certificates-projects,
+  .work-experience {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  /*mobile */
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2rem;
+  }
+  .nav-list li:first-child {
+    display: none;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+
+  /* mobile */
+  .hero-h2 {
+    font-size: 2rem;
+  }
+
+  .hero-p {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  /*  mobile */
+  .grid-project-section {
+    grid-template-columns: 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .project-section-h1 {
+    font-size: 2.5rem;
+  }
+
+  /* mobile */
+  .about-me-h2 {
+    font-size: 2rem;
+  }
+
+  /* mobile */
+  .my-skills-section {
+    padding: 20px 5%;
+  }
+
+  .skill-section-h2 {
+    font-size: 2rem;
+  }
+
+  /* mobile */
+  .project-main {
+    padding: 1rem 5%;
+  }
+
+  .project-main h1 {
+    font-size: 2.5rem;
+  }
+
+  /* mobile */
+  .form-and-map {
+    grid-template-columns: 1fr;
+    padding: 5%;
+  }
+
+  /*  mobile */
+  .resume {
+    padding: 20px 5%;
+  }
+
+  .education,
+  .certificates-projects,
+  .work-experience {
+    width: 100%;
+  }
+
+  .profile img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile h1 {
+    font-size: 1.8rem;
+  }
+}
