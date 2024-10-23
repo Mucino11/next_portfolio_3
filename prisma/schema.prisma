@@ -1,0 +1,66 @@
+
+// // This is your Prisma schema file,
+// // learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// generator client {
+//   provider = "prisma-client-js"
+// }
+
+// datasource db {
+//   provider = "sqlite"
+//   url      = env("DATABASE_URL")
+// }
+
+// model Project {
+//   id            Int      @id @default(autoincrement())
+//   name          String
+//   description   String
+//   status        String
+//   image         String?
+//   githubLink    String
+//   publishedAt   DateTime @default(now())
+//   tags          String   // Changed to a simple string
+//   public        Boolean  @default(true)
+//   externalLinks ExternalLink[]  // Relation to ExternalLink model
+//   author        String?
+// }
+
+// model ExternalLink {
+//   id        Int       @id @default(autoincrement())
+//   name      String
+//   url       String
+//   project   Project   @relation(fields: [projectId], references: [id])
+//   projectId Int
+// }
+
+// schema.prisma
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Project {
+  id            Int           @id @default(autoincrement())
+  name          String
+  description   String
+  status        String
+  image         String?
+  githubLink    String
+  publishedAt   DateTime      @default(now())
+  tags          String
+  public        Boolean       @default(true)
+  externalLinks ExternalLink[]
+  author        String?
+}
+
+model ExternalLink {
+  id        Int     @id @default(autoincrement())
+  name      String
+  url       String
+  project   Project @relation(fields: [projectId], references: [id])
+  projectId Int
+}

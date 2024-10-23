@@ -1,0 +1,309 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Big Lemon Restaurant",
+      "description": "Portfolio project from Meta frontend developer course on Coursera, the project was built using React where the focus was on the use of components.",
+      "status": "Complete",
+      "image": "images/big_lemon.png",
+      "githubLink": "https://github.com/Mucino11/big_lemon_new.git",
+      "publishedAt": "2024-10-10T12:00:00Z",
+      "tags": [
+        "React",
+        "Components",
+        "Meta Course"
+      ],
+      "public": true,
+      "externalLinks": [
+        {
+          "name": "Live Demo",
+          "url": "https://big-lemon-demo.com"
+        }
+      ],
+      "relatedDemos": [
+        "https://big-lemon-demo.com",
+        "https://big-lemon-docs.com"
+      ],
+      "author": "Musa Jalloh"
+    },
+    {
+      "id": 2,
+      "name": "Europris Online store redesign",
+      "description": "This school project involved redesigning Europris's online store based on our market and user research.",
+      "status": "Complete",
+      "image": "images/ui_ux_project.png",
+      "githubLink": "https://xd.adobe.com/view/b04280ca-e612-428e-b683-7052c3bfacf3-e511/",
+      "publishedAt": "2024-09-15T08:00:00Z",
+      "tags": [
+        "UI/UX",
+        "Store Redesign",
+        "Accessibility"
+      ],
+      "public": true,
+      "externalLinks": [
+        {
+          "name": "Project Documentation",
+          "url": "https://europris-redesign-docs.com"
+        }
+      ],
+      "relatedDemos": [
+        "https://europris-redesign-demo.com"
+      ],
+      "author": "Musa Jalloh"
+    },
+    {
+      "id": 3,
+      "name": "Next Media Agency",
+      "description": "This is a WordPress website, built using Elementor.",
+      "status": "Complete",
+      "image": "images/next-media-agency.png",
+      "githubLink": "https://nextmediaagency.musajalloh.com/",
+      "publishedAt": "2024-08-01T14:00:00Z",
+      "tags": [
+        "WordPress",
+        "Elementor",
+        "Web Design"
+      ],
+      "public": true,
+      "externalLinks": [
+        {
+          "name": "Live Site",
+          "url": "https://nextmediaagency.musajalloh.com/"
+        }
+      ],
+      "relatedDemos": [
+        "https://next-media-agency-demo.com"
+      ],
+      "author": "Musa Jalloh"
+    },
+    {
+      "id": 4,
+      "name": "John doe",
+      "description": "iohfneporfeespod",
+      "status": "complete",
+      "image": "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "githubLink": "www.google.com",
+      "publishedAt": "2024-10-20T02:33:28.837Z",
+      "tags": [
+        "test",
+        "one",
+        "two"
+      ],
+      "public": true,
+      "externalLinks": [
+        "www.google.com"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "jamila",
+      "description": "jdnofsnfoiclkrsdnfocl",
+      "status": "complete",
+      "image": "https://www.pexels.com/photo/data-codes-through-eyeglasses-577585/",
+      "githubLink": "www.google.com",
+      "publishedAt": "2024-10-20T02:40:51.323Z",
+      "tags": [
+        "test",
+        "one",
+        "two"
+      ],
+      "public": true,
+      "externalLinks": [
+        "google"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Musa Jalloh",
+      "description": "this is a test",
+      "status": "Complete",
+      "image": "https://images.pexels.com/photos/3127880/pexels-photo-3127880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "githubLink": "https://github.com/Mucino11?tab=repositories",
+      "tags": [
+        "none",
+        "for",
+        "now,"
+      ],
+      "public": true,
+      "externalLinks": [
+        "httpps://google.com"
+      ],
+      "publishedAt": "2024-10-22T05:57:00.262Z"
+    },
+    {
+      "id": 7,
+      "name": "Musa Jalloh",
+      "description": "this is not a drill",
+      "status": "Complete",
+      "publishedAt": "2024-10-23T03:45:05.564Z",
+      "tags": [
+        "none",
+        "for",
+        "now,"
+      ],
+      "public": true,
+      "githubLink": "https://github.com/Mucino11",
+      "externalLinks": [
+        "https://www.google.com"
+      ],
+      "image": "https://images.pexels.com/photos/3127880/pexels-photo-3127880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+      "id": 8,
+      "name": "Musa Jalloh",
+      "description": "uijkoi ",
+      "status": "Complete",
+      "publishedAt": "2024-10-23T03:45:32.329Z",
+      "tags": [
+        "none",
+        "for",
+        "now,"
+      ],
+      "public": true,
+      "githubLink": "https://github.com/Mucino11",
+      "externalLinks": [
+        "https://www.google.com"
+      ],
+      "image": "https://images.pexels.com/photos/3127880/pexels-photo-3127880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+      "name": "Musa Jalloh",
+      "description": "appear both places",
+      "status": "Complete",
+      "publishedAt": "2024-10-23T04:04:20.343Z",
+      "tags": [
+        "none",
+        "for",
+        "now,"
+      ],
+      "public": true,
+      "githubLink": "https://github.com/Mucino11",
+      "externalLinks": [
+        "https://www.google.com"
+      ],
+      "image": "https://images.pexels.com/photos/3127880/pexels-photo-3127880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "id": 9
+    }
+  ],
+  "additionalProjects": [
+    {
+      "id": 7,
+      "name": "Coup d'etat in Africa",
+      "description": "A school project using journalism and technology to tell stories about things happening around the world.",
+      "status": "Complete",
+      "image": "images/coup-in-africa.png",
+      "githubLink": "https://github.com/Mucino11/coup-d-etat-in-africa.git",
+      "publishedAt": "2024-10-19T10:00:00Z",
+      "tags": [
+        "Journalism",
+        "Technology",
+        "Storytelling"
+      ],
+      "public": false,
+      "externalLinks": [
+        {
+          "name": "Project Article",
+          "url": "https://africa-coup-project.com"
+        }
+      ],
+      "relatedDemos": [
+        "https://africa-coup-demo.com"
+      ],
+      "author": "Musa Jalloh"
+    },
+    {
+      "id": 8,
+      "name": "Big Lemon Restaurant",
+      "description": "Portfolio project from Meta frontend developer course on Coursera, the project was built using React where the focus was on the use of components.",
+      "status": "Complete",
+      "image": "images/big_lemon.png",
+      "githubLink": "https://github.com/Mucino11/big_lemon_new.git",
+      "publishedAt": "2024-10-10T12:00:00Z",
+      "tags": [
+        "React",
+        "Components",
+        "Meta Course"
+      ],
+      "public": true,
+      "externalLinks": [
+        {
+          "name": "Live Demo",
+          "url": "https://big-lemon-demo.com"
+        }
+      ],
+      "relatedDemos": [
+        "https://big-lemon-demo.com",
+        "https://big-lemon-docs.com"
+      ],
+      "author": "Musa Jalloh"
+    },
+    {
+      "id": 9,
+      "name": "Next Media Agency",
+      "description": "This is a WordPress website, built using Elementor.",
+      "status": "Complete",
+      "image": "images/next-media-agency.png",
+      "githubLink": "https://nextmediaagency.musajalloh.com/",
+      "publishedAt": "2024-08-01T14:00:00Z",
+      "tags": [
+        "WordPress",
+        "Elementor",
+        "Web Design"
+      ],
+      "public": true,
+      "externalLinks": [
+        {
+          "name": "Live Site",
+          "url": "https://nextmediaagency.musajalloh.com/"
+        }
+      ],
+      "relatedDemos": [
+        "https://next-media-agency-demo.com"
+      ],
+      "author": "Musa Jalloh"
+    },
+    {
+      "id": 10,
+      "name": "Coup d'etat in Africa",
+      "description": "A school project using journalism and technology to tell stories about things happening around the world.",
+      "status": "Complete",
+      "image": "images/coup-in-africa.png",
+      "githubLink": "https://github.com/Mucino11/coup-d-etat-in-africa.git",
+      "publishedAt": "2024-10-19T10:00:00Z",
+      "tags": [
+        "Journalism",
+        "Technology",
+        "Storytelling"
+      ],
+      "public": false,
+      "externalLinks": [
+        {
+          "name": "Project Article",
+          "url": "https://africa-coup-project.com"
+        }
+      ],
+      "relatedDemos": [
+        "https://africa-coup-demo.com"
+      ],
+      "author": "Musa Jalloh"
+    },
+    {
+      "name": "Musa Jalloh",
+      "description": "appear both places",
+      "status": "Complete",
+      "publishedAt": "2024-10-23T04:04:20.343Z",
+      "tags": [
+        "none",
+        "for",
+        "now,"
+      ],
+      "public": true,
+      "githubLink": "https://github.com/Mucino11",
+      "externalLinks": [
+        "https://www.google.com"
+      ],
+      "image": "https://images.pexels.com/photos/3127880/pexels-photo-3127880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "id": 9
+    }
+  ]
+}
