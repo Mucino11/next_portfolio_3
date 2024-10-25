@@ -1,32 +1,6 @@
 {
   "projects": [
     {
-      "id": 1,
-      "name": "Big Lemon Restaurant",
-      "description": "Portfolio project from Meta frontend developer course on Coursera, the project was built using React where the focus was on the use of components.",
-      "status": "Complete",
-      "image": "images/big_lemon.png",
-      "githubLink": "https://github.com/Mucino11/big_lemon_new.git",
-      "publishedAt": "2024-10-10T12:00:00Z",
-      "tags": [
-        "React",
-        "Components",
-        "Meta Course"
-      ],
-      "public": true,
-      "externalLinks": [
-        {
-          "name": "Live Demo",
-          "url": "https://big-lemon-demo.com"
-        }
-      ],
-      "relatedDemos": [
-        "https://big-lemon-demo.com",
-        "https://big-lemon-docs.com"
-      ],
-      "author": "Musa Jalloh"
-    },
-    {
       "id": 2,
       "name": "Europris Online store redesign",
       "description": "This school project involved redesigning Europris's online store based on our market and user research.",
@@ -167,6 +141,7 @@
       "image": "https://images.pexels.com/photos/3127880/pexels-photo-3127880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
+      "id": 9,
       "name": "Musa Jalloh",
       "description": "appear both places",
       "status": "Complete",
@@ -181,8 +156,42 @@
       "externalLinks": [
         "https://www.google.com"
       ],
+      "image": "https://images.pexels.com/photos/3127880/pexels-photo-3127880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+      "name": "Web Development",
+      "description": "react.js project",
+      "status": "Complete",
+      "publishedAt": "2024-10-25T03:11:23.766Z",
+      "tags": [
+        "none",
+        "for",
+        "now,"
+      ],
+      "public": true,
+      "githubLink": "https://github.com/Mucino11",
+      "externalLinks": [
+        "https://www.google.com"
+      ],
       "image": "https://images.pexels.com/photos/3127880/pexels-photo-3127880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "id": 9
+      "id": 10
+    },
+    {
+      "name": "Test Project",
+      "description": "A sample project to test Prisma",
+      "status": "Complete",
+      "image": "https://example.com/image.jpg",
+      "githubLink": "https://github.com/test/testproject",
+      "tags": "sample, test",
+      "public": true,
+      "author": "Musa Jalloh",
+      "externalLinks": [
+        {
+          "name": "Live Demo",
+          "url": "https://example.com/demo"
+        }
+      ],
+      "id": 11
     }
   ],
   "additionalProjects": [
@@ -288,6 +297,7 @@
       "author": "Musa Jalloh"
     },
     {
+      "id": 9,
       "name": "Musa Jalloh",
       "description": "appear both places",
       "status": "Complete",
@@ -302,8 +312,42 @@
       "externalLinks": [
         "https://www.google.com"
       ],
+      "image": "https://images.pexels.com/photos/3127880/pexels-photo-3127880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+      "name": "Web Development",
+      "description": "react.js project",
+      "status": "Complete",
+      "publishedAt": "2024-10-25T03:11:23.766Z",
+      "tags": [
+        "none",
+        "for",
+        "now,"
+      ],
+      "public": true,
+      "githubLink": "https://github.com/Mucino11",
+      "externalLinks": [
+        "https://www.google.com"
+      ],
       "image": "https://images.pexels.com/photos/3127880/pexels-photo-3127880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "id": 9
+      "id": 10
+    },
+    {
+      "name": "Test Project",
+      "description": "A sample project to test Prisma",
+      "status": "Complete",
+      "image": "https://example.com/image.jpg",
+      "githubLink": "https://github.com/test/testproject",
+      "tags": "sample, test",
+      "public": true,
+      "author": "Musa Jalloh",
+      "externalLinks": [
+        {
+          "name": "Live Demo",
+          "url": "https://example.com/demo"
+        }
+      ],
+      "id": 11
     }
   ]
 }

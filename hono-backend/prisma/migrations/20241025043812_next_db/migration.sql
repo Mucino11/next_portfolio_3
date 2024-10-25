@@ -8,8 +8,7 @@ CREATE TABLE "Project" (
     "githubLink" TEXT NOT NULL,
     "publishedAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "tags" TEXT NOT NULL,
-    "public" BOOLEAN NOT NULL DEFAULT true,
-    "author" TEXT
+    "public" BOOLEAN NOT NULL DEFAULT true
 );
 
 -- CreateTable
