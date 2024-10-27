@@ -48,7 +48,7 @@ export default function Home() {
             {projectsState.map((project) => (
               <article key={project.id} className="project-card">
                 <h2 className="project-h2">Name: {project.name}</h2>
-                <p>Descriptions: {project.description}</p>
+                <p>Description: {project.description}</p>
                 <p>Status: {project.status}</p>
                 <p>
                   Published on:{" "}
