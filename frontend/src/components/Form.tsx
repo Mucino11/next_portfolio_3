@@ -1,14 +1,16 @@
+//from the backend, I am able to send send new project to the json file using postman, but when I tried doing the same from the frontend UI, it is not working as it should.
+
 import React, { useState, useEffect } from "react";
-import { projectSchema } from "../schemas/projectSchemas"; // Import the Zod schema
+import { projectSchema } from "../schemas/projectSchemas";
 import { z } from "zod";
-import { API_URLS } from "@/config/urls"; // Import the API URLs
+import { API_URLS } from "@/config/urls"; // import the API URLs
 
 type AddNewProjectProps = {
   projects: any[];
   setProjects: React.Dispatch<React.SetStateAction<any[]>>;
   additionalProjects?: any[];
   setAdditionalProjects?: React.Dispatch<React.SetStateAction<any[]>>;
-  editingProject?: any; // New prop for editing
+  editingProject?: any;
   setEditingProject?: React.Dispatch<React.SetStateAction<any | null>>;
 };
 
