@@ -1,4 +1,4 @@
-//from the backend, I am able to send send new project to the json file using postman, but when I tried doing the same from the frontend UI, it is not working as it should.
+//From the backend, I am able to send send new project to the json file using postman, but when I tried doing the same from the frontend UI, it is not working as it should.
 
 import React, { useState, useEffect } from "react";
 import { projectSchema } from "../schemas/projectSchemas";
@@ -25,19 +25,18 @@ export default function AddNewProject({
   const initialProjectState = {
     name: "",
     description: "",
-    status: "Complete", // Default to "Complete"
+    status: "Complete",
     image: "",
     githubLink: "",
-    publishedAt: "", // Date of publishing
-    tags: [], // Array for tags
-    public: true, // Boolean for public visibility
-    externalLinks: [""], // Array of external links (URLs as strings)
+    publishedAt: "",
+    tags: [],
+    public: true,
+    externalLinks: [""],
   };
 
   const [newProject, setNewProject] = useState(initialProjectState);
-  const [errors, setErrors] = useState<string[]>([]); // Store validation errors
-  const [isEditing, setIsEditing] = useState(false); // Track editing state
-
+  const [errors, setErrors] = useState<string[]>([]);
+  const [isEditing, setIsEditing] = useState(false);
   useEffect(() => {
     if (editingProject) {
       setNewProject(editingProject);
@@ -59,14 +58,14 @@ export default function AddNewProject({
   const handleAddExternalLink = () => {
     setNewProject({
       ...newProject,
-      externalLinks: [...newProject.externalLinks, ""], // Add a new empty string for a new external link
+      externalLinks: [...newProject.externalLinks, ""],
     });
   };
 
   // Handle form submission for both adding and editing projects
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setErrors([]); // Clear previous errors
+    setErrors([]);
 
     try {
       const validatedProject = projectSchema.parse({
@@ -77,7 +76,7 @@ export default function AddNewProject({
       console.log("Validation succeeded:", validatedProject);
 
       if (isEditing) {
-        // **Update existing project**
+        // Edit existing projects
         await fetch(`${API_URLS.updateProject}/${editingProject.id}`, {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
@@ -101,7 +100,7 @@ export default function AddNewProject({
         setIsEditing(false);
         if (setEditingProject) setEditingProject(null);
       } else {
-        // **Add new project**
+        // Add projects
         const response = await fetch(API_URLS.addProject, {
           method: "POST",
           headers: {
@@ -111,7 +110,7 @@ export default function AddNewProject({
         });
 
         const data = await response.json();
-        validatedProject.id = data.id; // Assign the new id from backend
+        validatedProject.id = data.id;
 
         // Update frontend state for both projects and additionalProjects
         setProjects((prevProjects) => [...prevProjects, validatedProject]);

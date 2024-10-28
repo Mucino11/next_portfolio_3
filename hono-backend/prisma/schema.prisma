@@ -14,13 +14,13 @@ model Project {
   name        String
   description String
   status      String
-  image       String?     // Optional field
+  image       String?     
   githubLink  String
-  publishedAt DateTime @default(now()) // Default to current timestamp
-  tags        String      // Storing tags as a comma-separated string for simplicity
+  publishedAt DateTime @default(now()) 
+  tags        String     
   public      Boolean @default(true)
-  author      String?     // Optional author field
-  externalLinks ExternalLink[] // Relation to ExternalLink model
+  author      String?    
+  externalLinks ExternalLink[] 
 }
 
 model ExternalLink {

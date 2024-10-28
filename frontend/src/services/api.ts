@@ -6,5 +6,3 @@ export const getProjects = async () => {
   }
   return response.json();
 };
-//
-//http://localhost:3001/projects

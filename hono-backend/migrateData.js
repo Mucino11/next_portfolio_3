@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 const projectsDataPath = path.resolve(__dirname, "./src/data/project.json");
 const projectData = JSON.parse(fs.readFileSync(projectsDataPath, "utf8"));
 
-// Helper function to check if a date is valid
+// Check if a date is valid
 function isValidDate(dateString) {
   const date = new Date(dateString);
   return !isNaN(date);
@@ -21,10 +21,9 @@ function isValidDate(dateString) {
 async function migrateData() {
   try {
     for (const project of projectData.projects) {
-      // Set a default date if publishedAt is invalid or not provided
       const publishedAt = isValidDate(project.publishedAt)
         ? new Date(project.publishedAt)
-        : new Date(); // Use current date as default
+        : new Date();
 
       await prisma.project.create({
         data: {
@@ -33,14 +32,14 @@ async function migrateData() {
           status: project.status,
           image: project.image,
           githubLink: project.githubLink,
-          publishedAt, // Always provide a valid date here
+          publishedAt,
           tags: Array.isArray(project.tags)
             ? project.tags.join(",")
             : project.tags,
           public: project.public,
           externalLinks: {
             create: project.externalLinks
-              .filter((link) => link.url) // Only include links with a defined URL
+              .filter((link) => link.url)
               .map((link) => ({
                 name: link.name || "External Link",
                 url: link.url,
@@ -58,5 +57,3 @@ async function migrateData() {
 }
 
 migrateData();
-
-// alway run this file to update the database with data from the json file migrateData.js

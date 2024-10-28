@@ -39,15 +39,15 @@ export default function Project() {
   };
 
   const refreshProjects = async () => {
-    // Call fetch API for additional projects and set the state with fresh data.
-    const updatedProjects = await usePortfolioProjects(); // Ensure `usePortfolioProjects` is refetching
+    // Suppose to call fetch API for additional projects and set the state with fresh data.
+    const updatedProjects = await usePortfolioProjects();
     setAdditionalProjects(updatedProjects.additionalProjects);
   };
 
   // Re-fetch data after an add or edit operation is completed
   const handleAddOrEditComplete = () => {
     refreshProjects();
-    setEditingProject(null); // Reset editing mode
+    setEditingProject(null);
   };
 
   if (error) return <p>{error}</p>;
